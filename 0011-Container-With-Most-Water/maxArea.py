@@ -1,4 +1,4 @@
-def maxArea(self, height: List[int]) -> int:
+def maxArea(height: list[int]) -> int:
     left, right = 0, len(height) - 1
     max_area = 0
 
@@ -14,3 +14,8 @@ def maxArea(self, height: List[int]) -> int:
 
     return max_area
 
+nums = [1,8,6,2,5,4,8,3,7]
+print(maxArea(nums))
+
+nums = [1,1]
+print(maxArea(nums))

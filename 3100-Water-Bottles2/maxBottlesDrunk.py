@@ -1,4 +1,4 @@
-def maxBottlesDrunk(self, numBottles: int, numExchange: int) -> int:
+def maxBottlesDrunk(numBottles: int, numExchange: int) -> int:
     full_bottles = numBottles
     empty_bottles, bottles_drunk = 0, 0
     while full_bottles > 0:
@@ -16,3 +16,11 @@ def maxBottlesDrunk(self, numBottles: int, numExchange: int) -> int:
 
     return bottles_drunk
 
+
+numBottles = 13
+numExchange = 6
+print(maxBottlesDrunk(numBottles, numExchange))
+
+numBottles = 10
+numExchange = 3
+print(maxBottlesDrunk(numBottles, numExchange))

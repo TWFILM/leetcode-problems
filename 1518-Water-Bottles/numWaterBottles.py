@@ -1,4 +1,4 @@
-def numWaterBottles(self, numBottles: int, numExchange: int) -> int:
+def numWaterBottles(numBottles: int, numExchange: int) -> int:
     totol_drunk = numBottles
     empty_bottles = numBottles
 
@@ -9,3 +9,11 @@ def numWaterBottles(self, numBottles: int, numExchange: int) -> int:
 
     return totol_drunk
 
+
+numBottles = 9
+numExchange = 3
+print(numWaterBottles(numBottles, numExchange))
+
+numBottles = 15
+numExchange = 4
+print(numWaterBottles(numBottles, numExchange))
