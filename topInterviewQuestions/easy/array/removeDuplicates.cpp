@@ -33,26 +33,29 @@ int removeDuplicates(vector<int>& nums) {
 // Time complexity: O(n)
 // Space complexity: O(1)
 
-// Test case1
-vector<int> nums = {1,1,2};
-vector<int> expectedNums = {1,2};
+int main() {
+    // Test case1
+    vector<int> nums = {1,1,2};
+    vector<int> expectedNums = {1,2};
 
-int k = removeDuplicates(nums);
+    int k = removeDuplicates(nums);
 
-assert(k == expectedNums.size());
-for (int i = 0; i < k; i++) {
-    assert(nums[i] == expectedNums[i]);
+    assert(k == expectedNums.size());
+    for (int i = 0; i < k; i++) {
+        assert(nums[i] == expectedNums[i]);
+    }
+
+    // Test case2
+    nums = {0,0,1,1,1,2,2,3,3,4};
+    expectedNums = {0,1,2,3,4};
+
+    k = removeDuplicates(nums);
+
+    assert(k == expectedNums.size());
+    for (int i = 0; i < k; i++) {
+        assert(nums[i] == expectedNums[i]);
+    }
+
+    cout << "All test cases passed." << endl;   
 }
 
-// Test case2
-vector<int> nums = {0,0,1,1,1,2,2,3,3,4};
-vector<int> expectedNums = {0,1,2,3,4};
-
-int k = removeDuplicates(nums);
-
-assert(k == expectedNums.size());
-for (int i = 0; i < k; i++) {
-    assert(nums[i] == expectedNums[i]);
-}
-
-cout << "All test cases passed." << endl;
