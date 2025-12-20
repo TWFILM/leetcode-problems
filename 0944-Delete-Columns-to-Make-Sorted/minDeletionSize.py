@@ -23,6 +23,7 @@ strs[i] consists of lowercase English letters.
 '''
 
 # Solution
+# Runtime: 66 ms, Memory: 17.98 MB
 def minDeletionSize(strs: list[str]) -> int:
     n = len(strs)
     cols = len(strs[0])
@@ -69,4 +70,6 @@ All 3 columns are not sorted, so you will delete all 3.
 '''
 expected = 3
 assert minDeletionSize(strs) == expected
+
+print("All test cases passed")
 
